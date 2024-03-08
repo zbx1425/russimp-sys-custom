@@ -88,6 +88,9 @@ fn build_from_source() {
         .define("ASSIMP_BUILD_ASSIMP_TOOLS", "OFF")
         .define("ASSIMP_BUILD_TESTS", "OFF")
         .define("ASSIMP_BUILD_ZLIB", build_zlib)
+        .define("ASSIMP_BUILD_ALL_EXPORTERS_BY_DEFAULT", "OFF")
+        .define("ASSIMP_BUILD_ALL_IMPORTERS_BY_DEFAULT", "OFF")
+        .define("ASSIMP_BUILD_X_IMPORTER", "ON")
         .define("LIBRARY_SUFFIX", "");
 
     // Add compiler flags
